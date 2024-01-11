@@ -18,13 +18,18 @@ class Item:
     def apply_discount(self):
         self.price = self.price * self.pay_rate
         
+    @staticmethod 
+    def is_integer(num):
+        #counting floats with zero decimal points
+        #i.e 5.0, 10.0
+        if isinstance(num, float):
+            return num.is_integer()
+        elif isinstance(num, int):
+            return True
+        else:
+            return False
+        
     def __repr__(self):
         return f"Item('{self.name}', {self.price}, {self.quantity})"
     
-item1 = Item("TV", 25000, 2)
-item2 = Item("Sound_bar", 15000, 1)
-item3 = Item("Remote", 1500, 1)
-item4 = Item("Stand", 10000, 1)
-
-for i in Item.all:
-    print(Item.all)
+print(Item.is_integer(11))
