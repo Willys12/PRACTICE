@@ -16,8 +16,9 @@ class Phone(Item):
         
         #Action to execute
         Phone.all.append(self)
-        
+          
 Phone1 = Phone("jseriesv1", 50000, 5, 1)
 Phone2 = Phone("jseriesv2", 68000, 6, 1)
 
-print(Phone.all)
+for phone in Phone.all:
+    print(phone.price)
