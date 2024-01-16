@@ -7,11 +7,11 @@ class Dog:
         
     #First instance method
     def description(self):
-        return f"{self.name} is {self.age} year old"
+        return f"{self.name} is {self.age} years old"
     
     #second instance method
     def speak(self, sound):
-        return f"{self.name} say {sound}"
+        return f"{self.name} says {sound}"
     
 miles = Dog("Miles", 4)
-print(miles)
+print(miles.speak("wow"))
