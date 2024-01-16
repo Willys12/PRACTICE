@@ -12,3 +12,6 @@ class Dog:
     #second instance method
     def speak(self, sound):
         return f"{self.name} say {sound}"
+    
+miles = Dog("Miles", 4)
+print(miles)
