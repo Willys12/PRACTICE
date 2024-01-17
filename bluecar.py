@@ -11,4 +11,6 @@ class Car:
     
 car1 = Car("blue", 20000)
 car2 = Car("red", 30000)
-print(car2.description())
+
+for car in (car1, car2):
+    print(car.description())
