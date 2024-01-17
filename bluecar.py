@@ -11,4 +11,4 @@ class Car:
     
 car1 = Car("blue", 20000)
 car2 = Car("red", 30000)
-print(car1)
+print(car1.description)
