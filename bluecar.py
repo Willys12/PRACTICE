@@ -7,8 +7,8 @@ class Car:
         
     #first instance method
     def description(self):
-        return f"The {self.color} car has {self.mileage} miles"
+        return f"The {self.color} car has {self.mileage:,} miles"
     
 car1 = Car("blue", 20000)
 car2 = Car("red", 30000)
-print(car1.description)
+print(car2.description())
