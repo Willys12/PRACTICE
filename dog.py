@@ -6,7 +6,7 @@ class Dog:
         self.age = age
         
     #First instance method
-    def description(self):
+    def __str__(self):
         return f"{self.name} is {self.age} years old"
     
     #second instance method
@@ -14,4 +14,4 @@ class Dog:
         return f"{self.name} says {sound}"
     
 miles = Dog("Miles", 4)
-print(miles.speak("wow"))
+print(miles.description())
