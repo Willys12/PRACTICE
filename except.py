@@ -1,3 +1,6 @@
+import sys
+    
+    
 def linux_interaction():
     assert('Linux' in sys.platform), "Fuction can only run on Linux system"
     print('Doing something')
@@ -5,5 +8,6 @@ def linux_interaction():
 try:
     linux_interaction()
     
-except:
-    print('Linux function not executed')
+except AssertionError as error:
+    print(error)
+    print('linux_interaction() Linux function not executed')
