@@ -9,8 +9,9 @@ try:
     linux_interaction()
     with open('file.log') as file:
         read_data = file.read()
-    
+
+except FileNotFoundError as fnf_error:
+    print(fnf_error)
 except AssertionError as error:
-    print('could not open file.log')
     print(error)
     print('linux_interaction() Linux function not executed')
