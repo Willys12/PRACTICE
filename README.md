@@ -5,3 +5,4 @@
 ## Objective
 
 - The aim or objective of the project is to cover the Class and static methods used in Object-oriented programming in Python.
+- In some instances you'll come across codes that I used that are slightly the same as other instructors: This is purely for practical purpose.
