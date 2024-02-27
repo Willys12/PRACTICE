@@ -10,3 +10,4 @@ if [ "$a" -ne "$b"]
 then
    echo "$a is not equal $b"
    echo "Arithmetic comparison"
+fi
